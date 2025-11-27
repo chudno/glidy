@@ -1,0 +1,51 @@
+<svg width="1510" height="622" viewBox="0 0 1510 622" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2_1592" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-17" width="1510" height="639">
+<path d="M0 -17H1510V622H0V-17Z" fill="url(#paint0_radial_2_1592)"/>
+</mask>
+<g mask="url(#mask0_2_1592)">
+<g opacity="0.3">
+<rect x="-13.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="156.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="326.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="496.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="666.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="836.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1006.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1176.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1346.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="-13.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="156.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="326.5" y="98.5" width="171" height="171" fill="#D9D9D9" fill-opacity="0.1" stroke="#D9D9D9"/>
+<rect x="496.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="666.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="836.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1006.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1176.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
+<path d="M1517.5 98.5V269.5H1346.5V98.5H1517.5Z" fill="#D9D9D9" fill-opacity="0.15" stroke="#D9D9D9"/>
+<rect x="-13.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="156.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="326.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="496.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="666.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="836.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
+<path d="M1177.5 268.5V439.5H1006.5V268.5H1177.5Z" fill="#D9D9D9" fill-opacity="0.15" stroke="#D9D9D9"/>
+<rect x="1176.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1346.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="-13.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="156.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="326.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="496.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
+<path d="M837.5 438.5V609.5H666.5V438.5H837.5Z" fill="#D9D9D9" fill-opacity="0.15" stroke="#D9D9D9"/>
+<rect x="836.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1006.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1176.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1346.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_2_1592" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(755 302.5) rotate(90) scale(319.5 755)">
+<stop offset="0.285216" stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#737373" stop-opacity="0.1"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,85 @@
+.bottom-section {
+  margin-top: fluid(200, 60);
+  background-image: url('/src/assets/images/main/analytics/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  border-radius: 20px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+
+  @include mobile {
+    overflow: hidden;
+    background-position: bottom;
+  }
+}
+
+.analyticsV2 {
+  overflow: visible;
+  padding: 40px;
+  color: var(--color-white);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mobile {
+    padding: 70px 10px 0;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1100px;
+    gap: 40px;
+
+    @include mobile {
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    color: inherit;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    width: auto;
+    bottom: 0;
+    height: fluid(581, 347);
+
+    @include mobile {
+      margin-top: 10px;
+      position: static;
+      max-width: max-content;
+    }
+  }
+
+  .analyticsV2-card {
+    border-radius: 20px;
+    padding: 40px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+    line-height: 1.2;
+    text-align: start;
+
+    @include mobile {
+      padding: 20px;
+    }
+
+    &__title {
+      color:inherit;
+      margin-top: 40px;
+    }
+    &__description {
+      margin-top: 20px;
+    }
+  }
+}

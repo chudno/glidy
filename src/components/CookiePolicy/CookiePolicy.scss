@@ -1,0 +1,37 @@
+.cookie-policy {
+  padding-top: fluid-to-laptop(316, 168);
+
+  &__title {
+    font-weight: 400;
+    line-height: 0.9;
+    font-size: fluid(100, 48);
+    margin-bottom: 300px;
+    text-align: center;
+  }
+
+  &__main {
+    &-title {
+      color: var(--color-black);
+      margin-bottom: 20px;
+      font-size: fluid(36, 28);
+      font-weight: 600;
+      display: inline-flex;
+      text-wrap: balance;
+
+      @include mobile {
+        max-width: 305px;
+      }
+    }
+
+    &-text {
+      color: var(--color-gray-4b);
+      font-size: fluid(24, 18);
+      line-height: 1.3;
+
+      @include tablet {
+        font-weight: 400;
+        line-height: 1.2;
+      }
+    }
+  }
+}

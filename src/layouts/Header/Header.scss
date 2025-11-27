@@ -1,0 +1,138 @@
+.header {
+  padding-top: 40px;
+  position: sticky;
+  z-index: 50;
+  top: 0;
+  inline-size: 100%;
+  block-size: 76px;
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border-width-s) solid transparent;
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 0 100px;
+
+  @include mobile {
+    padding-top: 10px;
+  }
+
+  @keyframes scrolling-header {
+    to {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      background-color: #0E1926;
+      border-color: var(--color-gray-4b);
+    }
+  }
+
+  &.is-fixed {
+    position: fixed;
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  &__overlay-menu-dialog {
+    position: fixed;
+    inset: 0 0 0 70px;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: var(--color-white);
+    border: none;
+    padding: var(--container-padding-x);
+    transition-duration: var(--transition-duration);
+    transition-behavior: allow-discrete;
+
+    flex-direction: column-reverse;
+    justify-content: start;
+    row-gap: 16px;
+
+    @include tablet-above {
+      display: contents;
+    }
+
+    @mixin starting-styles {
+      opacity: 0;
+      translate: 50%;
+    }
+
+    &[open] {
+      display: flex;
+
+      @starting-style {
+        @include starting-styles;
+      }
+    }
+
+    &:not([open]) {
+      @include starting-styles;
+    }
+  }
+
+  &__menu {
+    border-radius: var(--border-radius-l);
+
+    @include laptop {
+      border-radius: var(--border-radius-m);
+    }
+
+    @include tablet {
+      display: flex;
+      block-size: 100%;
+      border-radius: 0;
+      overflow-y: auto;
+    }
+
+    &-list {
+      display: flex;
+      align-items: start;
+      column-gap: 40px;
+
+      @include tablet {
+        flex-direction: column;
+        row-gap: 40px;
+        margin-block-start: 90px;
+      }
+    }
+
+    &-link {
+      font-family: var(--font-family-inter);
+      color: var(--color-white);
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+
+      @include tablet {
+        color: var(--color-black-4b)
+      }
+
+      @include hover {
+        color: var(--color-green-d4);
+      }
+
+      &.is-active {
+        color: var(--color-green-d4);
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    color: var(--color-white);
+  }
+
+  &__burger-button {
+    position: relative;
+  }
+}

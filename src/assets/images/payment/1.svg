@@ -1,0 +1,25 @@
+<svg width="538" height="538" viewBox="0 0 538 538" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2_5945" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="530" height="530">
+<circle cx="269" cy="265" r="265" fill="url(#paint0_radial_2_5945)"/>
+</mask>
+<g mask="url(#mask0_2_5945)">
+<rect x="-139" y="12" width="815.555" height="1" fill="#D9D9D9"/>
+<rect x="-139" y="113" width="815.555" height="1" fill="#D9D9D9"/>
+<rect x="-139" y="214" width="815.555" height="1" fill="#D9D9D9"/>
+<rect x="-139" y="315" width="815.555" height="1" fill="#D9D9D9"/>
+<rect x="-139" y="416" width="815.555" height="1" fill="#D9D9D9"/>
+<rect x="-139" y="517" width="815.555" height="1" fill="#D9D9D9"/>
+<rect x="16" y="-25" width="1" height="580" fill="#D9D9D9"/>
+<rect x="117" y="-25" width="1" height="580" fill="#D9D9D9"/>
+<rect x="218" y="-25" width="1" height="580" fill="#D9D9D9"/>
+<rect x="319" y="-25" width="1" height="580" fill="#D9D9D9"/>
+<rect x="420" y="-25" width="1" height="580" fill="#D9D9D9"/>
+<rect x="521" y="-25" width="1" height="580" fill="#D9D9D9"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_2_5945" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(269 265) rotate(90) scale(265 360.377)">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#737373" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

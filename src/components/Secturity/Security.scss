@@ -1,0 +1,32 @@
+
+.security {
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+  }
+
+  .security-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 40px 40px 70px;
+    gap: 20px;
+
+    @include mobile {
+      gap: 10px;
+      padding: 20px;
+    }
+
+    &__image {
+      margin-bottom: -114px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.button {
+  @include flex-center(true);
+  @include fluid-text(20, 16);
+
+  font-family: var(--font-family-inter);
+  column-gap: 10px;
+  padding: 10px 30px;
+  height: 56px;
+  font-weight: 500;
+  color: var(--color-black-07);
+  background-color: var(--color-green-d4);
+  border: none;
+  border-radius: 100px;
+  user-select: none;
+  cursor: pointer;
+
+  @include hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    scale: 1.05;
+  }
+
+  &:disabled {
+    color: var(--color-white);
+    background-color: var(--color-gray-4b);
+    pointer-events: none;
+  }
+
+  &:has(.button__icon:only-child) {
+    @include square(fluid-to-laptop(56, 44));
+
+    padding: 0;
+  }
+
+  &__transparent {
+    background-color: transparent;
+
+    &:has(.button__icon:only-child) {
+      @include square(44px);
+
+      .button__icon {
+        --iconSize: #{fluid-to-laptop(34, 24)};
+      }
+    }
+  }
+
+  &__black-06,
+  &__black-08,
+  &__black-10 {
+    border: var(--border);
+  }
+
+  &__black-06 {
+    background: var(--color-black-06);
+  }
+
+  &__black-08 {
+    background-color: var(--color-black-08);
+  }
+
+  &__black-10 {
+    background-color: var(--color-black-10);
+  }
+}

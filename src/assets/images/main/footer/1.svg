@@ -1,0 +1,51 @@
+<svg width="1518" height="468" viewBox="0 0 1518 468" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1286_1535" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="1510" height="532">
+<path d="M4 2.21921e-05L1514 0L1514 531.577L3.99999 531.577L4 2.21921e-05Z" fill="url(#paint0_radial_1286_1535)"/>
+</mask>
+<g mask="url(#mask0_1286_1535)">
+<g opacity="0.3">
+<rect x="-9.5" y="-45.4219" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="160.5" y="-45.4219" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="330.5" y="-45.4219" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="500.5" y="-45.4219" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="670.5" y="-45.4219" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="840.5" y="-45.4219" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1010.5" y="-45.4219" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1180.5" y="-45.4219" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1350.5" y="-45.4219" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="-9.5" y="124.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="160.5" y="124.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="330.5" y="124.578" width="171" height="171" fill="#D9D9D9" fill-opacity="0.1" stroke="#D9D9D9"/>
+<rect x="500.5" y="124.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="670.5" y="124.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="840.5" y="124.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1010.5" y="124.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1180.5" y="124.578" width="171" height="171" stroke="#D9D9D9"/>
+<path d="M1521.5 124.578L1521.5 295.578L1350.5 295.578L1350.5 124.578L1521.5 124.578Z" fill="#D9D9D9" fill-opacity="0.15" stroke="#D9D9D9"/>
+<rect x="-9.5" y="294.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="160.5" y="294.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="330.5" y="294.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="500.5" y="294.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="670.5" y="294.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="840.5" y="294.578" width="171" height="171" stroke="#D9D9D9"/>
+<path d="M1181.5 294.578L1181.5 465.578L1010.5 465.578L1010.5 294.578L1181.5 294.578Z" fill="#D9D9D9" fill-opacity="0.15" stroke="#D9D9D9"/>
+<rect x="1180.5" y="294.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1350.5" y="294.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="-9.5" y="464.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="160.5" y="464.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="330.5" y="464.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="500.5" y="464.578" width="171" height="171" stroke="#D9D9D9"/>
+<path d="M841.5 464.578L841.5 635.578L670.5 635.578L670.5 464.578L841.5 464.578Z" fill="#D9D9D9" fill-opacity="0.15" stroke="#D9D9D9"/>
+<rect x="840.5" y="464.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1010.5" y="464.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1180.5" y="464.578" width="171" height="171" stroke="#D9D9D9"/>
+<rect x="1350.5" y="464.578" width="171" height="171" stroke="#D9D9D9"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_1286_1535" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(759 265.788) rotate(90) scale(265.788 755)">
+<stop offset="0.285216" stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#737373" stop-opacity="0.1"/>
+</radialGradient>
+</defs>
+</svg>

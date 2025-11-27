@@ -1,0 +1,111 @@
+.payment {
+  margin-top: fluid(140, 80);
+  padding: 40px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background: rgba(241, 243, 244, 0.5);
+  border-radius: 20px;
+
+  @include mobile {
+    padding: 30px 10px 60px;
+    grid-template-columns: 1fr;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    pointer-events: none;
+
+    @include  mobile {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__content {
+    grid-column: 1 / span 2;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    @include mobile {
+      align-items: center;
+      grid-column: 1 / span 1;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: auto;
+
+    @include mobile {
+      margin-top: 0;
+    }
+  }
+
+  &__description {
+    margin-top: 24px;
+    line-height: 120%;
+
+    @include mobile {
+      text-align: center;
+      margin-top: 12px;
+    }
+  }
+
+  &__button {
+    margin-top: 36px;
+
+    @include mobile {
+      margin-top: 32px;
+    }
+  }
+
+  .payment-card {
+    position: relative;
+    z-index: 10;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border-radius: 20px;
+
+    @include  mobile {
+      padding: 16px;
+      text-align: center;
+    }
+
+    @include mobile {
+      align-items: center;
+    }
+
+    &__inner {
+      @include square(80px);
+      @include flex-center;
+
+      border-radius: 8px;
+      background-color: #F8F9F9;
+    }
+
+    &__title {
+      margin-top: 40px;
+
+      @include mobile {
+        margin-top: 20px;
+      }
+    }
+
+    &__description {
+      margin-top: 20px;
+      line-height: 120%;
+
+      @include mobile {
+        margin-top: 10px;
+      }
+    }
+  }
+}

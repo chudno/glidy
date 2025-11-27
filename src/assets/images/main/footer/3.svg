@@ -1,0 +1,51 @@
+<svg width="1510" height="639" viewBox="0 0 1510 639" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2_800" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1510" height="639">
+<path d="M0 0H1510V639H0V0Z" fill="url(#paint0_radial_2_800)"/>
+</mask>
+<g mask="url(#mask0_2_800)">
+<g opacity="0.1">
+<rect x="-13.5" y="-54.5" width="171" height="171" stroke="white"/>
+<rect x="156.5" y="-54.5" width="171" height="171" stroke="white"/>
+<rect x="326.5" y="-54.5" width="171" height="171" stroke="white"/>
+<rect x="496.5" y="-54.5" width="171" height="171" stroke="white"/>
+<rect x="666.5" y="-54.5" width="171" height="171" stroke="white"/>
+<rect x="836.5" y="-54.5" width="171" height="171" stroke="white"/>
+<rect x="1006.5" y="-54.5" width="171" height="171" stroke="white"/>
+<rect x="1176.5" y="-54.5" width="171" height="171" stroke="white"/>
+<rect x="1346.5" y="-54.5" width="171" height="171" stroke="white"/>
+<rect x="-13.5" y="115.5" width="171" height="171" stroke="white"/>
+<rect x="156.5" y="115.5" width="171" height="171" stroke="white"/>
+<rect x="326.5" y="115.5" width="171" height="171" fill="white" fill-opacity="0.1" stroke="white"/>
+<rect x="496.5" y="115.5" width="171" height="171" stroke="white"/>
+<rect x="666.5" y="115.5" width="171" height="171" stroke="white"/>
+<rect x="836.5" y="115.5" width="171" height="171" stroke="white"/>
+<rect x="1006.5" y="115.5" width="171" height="171" stroke="white"/>
+<rect x="1176.5" y="115.5" width="171" height="171" stroke="white"/>
+<path d="M1517.5 115.5V286.5H1346.5V115.5H1517.5Z" fill="white" fill-opacity="0.15" stroke="white"/>
+<rect x="-13.5" y="285.5" width="171" height="171" stroke="white"/>
+<rect x="156.5" y="285.5" width="171" height="171" stroke="white"/>
+<rect x="326.5" y="285.5" width="171" height="171" stroke="white"/>
+<rect x="496.5" y="285.5" width="171" height="171" stroke="white"/>
+<rect x="666.5" y="285.5" width="171" height="171" stroke="white"/>
+<rect x="836.5" y="285.5" width="171" height="171" stroke="white"/>
+<path d="M1177.5 285.5V456.5H1006.5V285.5H1177.5Z" fill="white" fill-opacity="0.15" stroke="white"/>
+<rect x="1176.5" y="285.5" width="171" height="171" stroke="white"/>
+<rect x="1346.5" y="285.5" width="171" height="171" stroke="white"/>
+<rect x="-13.5" y="455.5" width="171" height="171" stroke="white"/>
+<rect x="156.5" y="455.5" width="171" height="171" stroke="white"/>
+<rect x="326.5" y="455.5" width="171" height="171" stroke="white"/>
+<rect x="496.5" y="455.5" width="171" height="171" stroke="white"/>
+<path d="M837.5 455.5V626.5H666.5V455.5H837.5Z" fill="white" fill-opacity="0.15" stroke="white"/>
+<rect x="836.5" y="455.5" width="171" height="171" stroke="white"/>
+<rect x="1006.5" y="455.5" width="171" height="171" stroke="white"/>
+<rect x="1176.5" y="455.5" width="171" height="171" stroke="white"/>
+<rect x="1346.5" y="455.5" width="171" height="171" stroke="white"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_2_800" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(755 319.5) rotate(90) scale(319.5 755)">
+<stop offset="0.285216" stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#737373" stop-opacity="0.1"/>
+</radialGradient>
+</defs>
+</svg>
