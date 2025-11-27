@@ -29,6 +29,7 @@ firstNameInput.addEventListener("input", () => {
 });
 
 const API_URL = import.meta.env.VITE_API_URL;
+const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -43,7 +44,7 @@ form.addEventListener("submit", async (e) => {
     // ❗ Берём токен от Google reCAPTCHA v3
     let token = "";
     try {
-        token = await grecaptcha.execute("6Lf0QBosAAAAABP8ORsjcSgeeGKg3ko5u2EkSUfQ", { action: "submit" });
+        token = await grecaptcha.execute(SITE_KEY, { action: "submit" });
     } catch (error) {
         console.error("reCAPTCHA error:", error);
         alert("Captcha error, please try again");

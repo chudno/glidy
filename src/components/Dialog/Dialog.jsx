@@ -27,7 +27,7 @@ const Dialog = () => {
           <form className="dialog__main">
             <div className="dialog__main-body">
               {formData.map((field, index) => (
-                  <div className={'dialog__control'} key={index}>
+                  <div className={'dialog__control'} key={field.name}>
                     <input
                         className="dialog__input"
                         placeholder={field.placeholder}

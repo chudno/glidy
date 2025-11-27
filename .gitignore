@@ -5,3 +5,7 @@ db.json
 node_modules
 dist
 .idea
+.env
+.env.local
+.env.development
+.env.production
