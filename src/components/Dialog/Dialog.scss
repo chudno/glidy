@@ -7,7 +7,12 @@
   width: 100%;
   background: transparent;
   padding: 0;
-  height: 100vh;
+  /* Учет верхних/нижних безопасных зон на iOS */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+
+  /* Гарантия высоты */
+  height: calc(100vh + env(safe-area-inset-bottom));
 
   @include mobile {
     margin: 0;
