@@ -34,8 +34,10 @@ export default defineConfig({
     icons: {
       srcDir: 'src/assets/icons',
       outDir: 'assets/images',
-      outName: '[dirname]',
+      outName: 'sprite',
       svgstoreOptions: {
+        cleanDefs: true,
+        cleanup: true,
         cleanSymbols: ['fill', 'stroke', 'stroke-linejoin', 'stroke-width'],
       },
     },
