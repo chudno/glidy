@@ -7,7 +7,9 @@ export const metadata = {
 export default function () {
     return (
         <>
-            <MerchantTerms />
+            <div className="main-wrapper">
+                <MerchantTerms />
+            </div>
         </>
     )
 }

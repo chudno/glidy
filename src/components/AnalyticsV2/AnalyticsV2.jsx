@@ -22,6 +22,7 @@ const AnalyticsV2 = (props) => {
                                 className="analyticsV2-card__img"
                                 src={imgSrc}
                                 alt={''}
+                                format="original"
                             />
                             <h3 className={'analyticsV2-card__title'}>
                                 {title}
@@ -38,6 +39,7 @@ const AnalyticsV2 = (props) => {
                     className="analyticsV2__image"
                     src={imgSrc}
                     alt=""
+                    format="original"
                 />
             </div>
         </section>

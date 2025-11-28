@@ -7,7 +7,9 @@ export const metadata = {
 export default function () {
   return (
     <>
-      <CookiePolicy />
+        <div className="main-wrapper">
+            <CookiePolicy />
+        </div>
     </>
   )
 }

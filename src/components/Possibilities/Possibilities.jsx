@@ -16,8 +16,8 @@ const Possibilities = (props) => {
             {cards.map(({title, description, imgSrc}, index) => (
                 <div className="possibilities-card" key={index}>
                     <div className="possibilities-card__header">
-                        <Image className="possibilities-card__circle" src="/src/assets/images/payment/1.svg" />
-                        <Image className="possibilities-card__image" src={imgSrc} alt=""/>
+                        <Image className="possibilities-card__circle" src="/src/assets/images/payment/1.svg" format="original"/>
+                        <Image className="possibilities-card__image" src={imgSrc} alt="" format="original"/>
                     </div>
                     <div className="possibilities-card__body">
                         <h3 className="possibilities-card__title">

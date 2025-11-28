@@ -22,6 +22,7 @@ const Hero = (props) => {
                     className="hero__bg"
                     src="/src/assets/images/main/3.svg"
                     alt=""
+                    format="original"
                 />
                 <div className="hero__content">
                     <h1 className="hero__title" id={titleId}>
@@ -43,6 +44,7 @@ const Hero = (props) => {
                     className="hero__image"
                     src={imgSrc}
                     alt=""
+                    format="original"
                 />
             </div>
 

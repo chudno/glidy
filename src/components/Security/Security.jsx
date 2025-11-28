@@ -33,6 +33,7 @@ const Security = () => {
                                     className={'security-card__image'}
                                     src={imgSrc}
                                     alt={''}
+                                    format="original"
                                 />
                                 <div className={'security-card__body'}>
                                     <h3 className={'security-card__title'}>

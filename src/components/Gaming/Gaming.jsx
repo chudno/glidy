@@ -43,7 +43,7 @@ const Gaming = (props) => {
                                             items.map((itemSrc, index) => {
                                                 return (
                                                     <div className={'gaming-card__item'} key={index}>
-                                                        <Image className={'gaming-card__item-image'} src={itemSrc}  alt={''}/>
+                                                        <Image className={'gaming-card__item-image'} src={itemSrc} alt={''} format="original"/>
                                                     </div>
                                                 )
                                             })
@@ -54,6 +54,7 @@ const Gaming = (props) => {
                                     className={'gaming-card__image'}
                                     src={imgSrc}
                                     alt=""
+                                    format="original"
                                 />
                             </div>
                         )

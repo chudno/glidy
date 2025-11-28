@@ -27,8 +27,8 @@ const Why = (props) => {
                         return (
                             <div className="card" key={index}>
                                 <div className="card__header">
-                                    <Image className="card__circle" src="/src/assets/images/main/why/circle.svg" />
-                                    <Image className="card__image" src={imgSrc} alt=""/>
+                                    <Image className="card__circle" src="/src/assets/images/main/why/circle.svg" format="original"/>
+                                    <Image className="card__image" src={imgSrc} alt="" format="original"/>
                                 </div>
                                 <div className="card__body">
                                     <h3 className="card__title">

@@ -29,6 +29,7 @@ const Analytics = () => {
                     className="analytics__image"
                     src="/src/assets/images/main/analytics/2.webp"
                     alt=""
+                    format="original"
                 />
             </div>
         </section>

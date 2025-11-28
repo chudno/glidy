@@ -32,6 +32,7 @@ const Payment = () => {
                 className="payment__bg"
                 src={'/src/assets/images/main/payment/1.svg'}
                 alt=""
+                format="original"
             />
             <div className="payment__content">
                 <h2 className="payment__title">
@@ -60,6 +61,7 @@ const Payment = () => {
                                 className="payment-card__image"
                                 src={imgSrc}
                                 alt={""}
+                                format="original"
                             />
                         </div>
                         <h3 className="payment-card__title">

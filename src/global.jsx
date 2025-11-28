@@ -60,14 +60,11 @@ export default function (props) {
             {/* Web manifest */}
             <link rel="manifest" href="/site.webmanifest" />
         </Head>
-
-        <div className="main-wrapper">
             <Header url={url}/>
             <Content>
                 {children}
             </Content>
             <Footer />
-        </div>
         <Dialog />
     </>
   )
