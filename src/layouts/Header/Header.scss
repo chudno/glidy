@@ -38,7 +38,6 @@
   }
 
   &__overlay-menu-dialog {
-    min-height: 100dvh;
     position: fixed;
     inset: 0 0 0 70px;
     inline-size: 100%;
@@ -52,6 +51,13 @@
     flex-direction: column-reverse;
     justify-content: start;
     row-gap: 16px;
+
+    /* Учет верхних/нижних безопасных зон на iOS */
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+
+    /* Гарантия высоты */
+    height: calc(100vh + env(safe-area-inset-bottom));
 
     @include tablet-above {
       display: contents;
