@@ -29,7 +29,7 @@ firstNameInput.addEventListener("input", () => {
 });
 
 const API_URL = import.meta.env.VITE_API_URL;
-const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+const SITE_KEY = '6Lf0QBosAAAAABP8ORsjcSgeeGKg3ko5u2EkSUfQ';
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
