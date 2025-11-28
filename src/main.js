@@ -6,7 +6,10 @@ new OverlayMenu();
 const modal = new Modal(".dialog");
 
 document.querySelectorAll("[modal-button-open]").forEach(btn => {
-    btn.addEventListener("click", () => modal.open());
+    btn.addEventListener("click", () => {
+        resetUI();     // ← при каждом открытии сбрасываем интерфейс
+        modal.open();
+    });
 });
 
 const modalEl = document.querySelector(".dialog");
@@ -20,7 +23,7 @@ closeBtn.addEventListener("click", () => modal.close());
 const firstNameInput = form.querySelector("input[name='first_name']");
 const firstNameError = modalEl.querySelector("[data-error-for='firstName']");
 
-// 🔹 1. Убираем ошибку при вводе
+// 🔹 Убираем ошибку при вводе
 firstNameInput.addEventListener("input", () => {
     if (firstNameInput.value.trim() !== "") {
         firstNameInput.classList.remove("is-error");
@@ -29,19 +32,31 @@ firstNameInput.addEventListener("input", () => {
 });
 
 const API_URL = import.meta.env.VITE_API_URL;
-const SITE_KEY = '6Lf0QBosAAAAABP8ORsjcSgeeGKg3ko5u2EkSUfQ';
+const SITE_KEY = "6Lf0QBosAAAAABP8ORsjcSgeeGKg3ko5u2EkSUfQ";
+
+// 🔥 Функция возврата формы в исходное состояние
+function resetUI() {
+    // показать форму, скрыть "успех"
+    formWrapper.classList.remove("is-hidden");
+    successBlock.classList.add("is-hidden");
+
+    // очистить форму
+    form.reset();
+
+    // очистить ошибки
+    firstNameInput.classList.remove("is-error");
+    firstNameError.classList.add("is-hidden");
+}
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // 🔹 2. Проверяем только после клика на Send
     if (firstNameInput.value.trim() === "") {
         firstNameInput.classList.add("is-error");
         firstNameError.classList.remove("is-hidden");
         return;
     }
 
-    // ❗ Берём токен от Google reCAPTCHA v3
     let token = "";
     try {
         token = await grecaptcha.execute(SITE_KEY, { action: "submit" });
@@ -60,8 +75,12 @@ form.addEventListener("submit", async (e) => {
             body: formData
         });
 
+        // скрываем форму, показываем success
         formWrapper.classList.add("is-hidden");
         successBlock.classList.remove("is-hidden");
+
+        // очищаем форму после успешной отправки
+        form.reset();
     } catch (err) {
         console.error("Send error", err);
     }
