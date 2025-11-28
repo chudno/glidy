@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero/index.js";
-import Security from "@/components/Secturity/index.js";
+import Security from "@/components/Security/index.js";
 import Possibilities from "@/components/Possibilities/index.js";
 import AnalyticsV2 from "@/components/AnalyticsV2/index.js";
 
