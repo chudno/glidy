@@ -2,7 +2,6 @@ import './Header.scss'
 import Logo from "@/components/Logo";
 import classNames from "classnames";
 import BurgerButton from "@/components/BurgerButton";
-import Button from "@/components/Button";
 import Icon from "@/components/Icon/Icon.jsx";
 
 const Header = (props) => {

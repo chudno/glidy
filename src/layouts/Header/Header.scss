@@ -38,6 +38,7 @@
   }
 
   &__overlay-menu-dialog {
+    min-height: 100dvh;
     position: fixed;
     inset: 0 0 0 70px;
     inline-size: 100%;
