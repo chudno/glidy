@@ -43,8 +43,8 @@
       overflow-y: auto;
 
       /* учёт вырезов и нижней плашки */
-      padding-top: env(safe-area-inset-top);
-      padding-bottom: env(safe-area-inset-bottom);
+      padding-top: calc(30px + env(safe-area-inset-top));
+      padding-bottom: calc(50px + env(safe-area-inset-bottom));
 
       height: calc(100vh + env(safe-area-inset-bottom));
       border-radius: 0;
