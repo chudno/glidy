@@ -29,12 +29,7 @@ const Button = (props) => {
     const buttonProps = {type}
     const specificProps = isLink ? linkProps : buttonProps
     const title = !isLabelVisible ? label : undefined
-    const iconComponent = iconName &&
-        <Icon
-            className={'button__icon'}
-            name={iconName}
-            hasFill={hasFillIcon}
-        />
+    const iconComponent = iconName
 
     return (
         <Component

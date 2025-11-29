@@ -1,5 +1,5 @@
 import classNames from "classnames"
-import {Icon as MinistaIcon} from 'minista'
+import {Icon as MinistaIcon, Image} from 'minista'
 import './Icon.scss'
 
 const Icon = (props) => {
@@ -15,11 +15,10 @@ const Icon = (props) => {
             className={classNames(className, 'icon')}
             aria-label={ariaLabel}
         >
-            <MinistaIcon
-                iconId={name}
-                fill={hasFill ? 'currentColor' : 'none'}
-                stroke={hasFill ? 'none' : 'currentColor'}
-            />
+
+            <svg>
+                <use href={`/src/assets/icons/sprite.svg#${name}`}></use>
+            </svg>
         </span>
     );
 };

@@ -66,7 +66,9 @@ const Header = (props) => {
                                         })}
                                         href={href}
                                     >
-                                        <Icon name={iconName}/>
+                                        <svg width={24} height={24}>
+                                            <use href={`/src/assets/icons/sprite.svg#${iconName}`}></use>
+                                        </svg>
                                         <span>
                                             {label}
                                         </span>

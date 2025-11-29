@@ -20,7 +20,9 @@ const Dialog = () => {
       <div className="dialog__backdrop"></div>
       <div className="dialog__inner">
         <button className="dialog__close-dialog" type={'button'} modal-button-close={''}>
-          <Icon name="close" />
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 19L19 1M19 19L1 1" stroke="#4B5563" stroke-width="2" stroke-linecap="round" />
+          </svg>
         </button>
         <div className={'dialog__form-wrapper'}>
           <h3 className="dialog__title">Contact Us</h3>
