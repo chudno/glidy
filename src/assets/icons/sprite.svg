@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none">
 
     <symbol id="about" viewBox="0 0 24 24"> <path d="M10 18V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M11.1201 2.198C11.3945 2.06471 11.6957 1.99595 12.0008 1.99699C12.3059 1.99803 12.6066 2.06884 12.8801 2.204L20.7461 6.051C21.2221 6.284 21.0561 7 20.5261 7H3.4741C2.9441 7 2.7791 6.284 3.2541 6.051L11.1201 2.198Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M14 18V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M18 18V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M3 22H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M6 18V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
@@ -9,7 +9,7 @@
     </symbol>
 
 
-    <symbol id="games" viewBox="0 0 24 24" fill="none">
+    <symbol id="games" viewBox="0 0 24 24">
             <path d="M6 11H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M8 9V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M15 12H15.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
