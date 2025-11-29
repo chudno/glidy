@@ -2,7 +2,7 @@ import './Header.scss'
 import Logo from "@/components/Logo";
 import classNames from "classnames";
 import BurgerButton from "@/components/BurgerButton";
-import Icon from "@/components/Icon/Icon.jsx";
+import spriteUrl from '@/assets/icons/sprite.svg';
 
 const Header = (props) => {
     const {
@@ -67,7 +67,7 @@ const Header = (props) => {
                                         href={href}
                                     >
                                         <svg width={24} height={24}>
-                                            <use href={`/src/assets/icons/sprite.svg#${iconName}`}></use>
+                                            <use href={`${spriteUrl}#${iconName}`}></use>
                                         </svg>
                                         <span>
                                             {label}
