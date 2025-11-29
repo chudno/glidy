@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: bottom;
 
-  @include mobile {
+  @include tablet {
     padding-top: 154px;
     min-height: 1215px;
     overflow: hidden;
@@ -20,7 +20,7 @@
     flex: 1;
     align-items: center;
 
-    @include mobile {
+    @include tablet {
       flex-direction: column;
     }
   }
@@ -36,15 +36,16 @@
   }
 
   &__content {
-    max-width: 840px;
+    max-width: fluid(840, 370);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
 
-    @include mobile {
+    @include tablet {
       max-width: 100%;
       align-items: center;
+      text-align: center;
     }
   }
 
@@ -75,7 +76,7 @@
     inline-size: fluid-to-laptop(1187, 611);
     block-size: fluid-to-laptop(1287, 633);
 
-    @include mobile {
+    @include tablet {
       transform: translateY(0%);
       top: auto;
       bottom: 130px;

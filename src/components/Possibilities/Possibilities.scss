@@ -4,10 +4,10 @@
   padding: 60px 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 120px;
-  row-gap: 30px;
+  column-gap: fluid-to-laptop(120, 60);
+  row-gap: fluid(30, 10);
 
-  @include mobile {
+  @include tablet {
     grid-template-columns: 1fr;
     gap: 10px;
   }
@@ -19,6 +19,11 @@
 
   .possibilities-card {
     text-align: center;
+
+    @include  tablet {
+      max-width: 560px;
+      margin-inline:  auto;
+    }
 
     &__body {
       display: flex;

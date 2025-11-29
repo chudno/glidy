@@ -173,7 +173,7 @@ const MerchantTerms = (props) => {
 
               <p className="merchant-terms__list-item-text">
                 <span className="merchant-terms__text-bold">“SYSTEM”, “we”, “our”, or “us”</span>
-                means Vertex Payment Services FZCO, Register No. 56701.
+                means Glidy Services FZCO, Register No. ____.
               </p>
 
               <p className="merchant-terms__list-item-text">

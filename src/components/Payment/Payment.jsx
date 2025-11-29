@@ -27,54 +27,60 @@ const cards = [
 
 const Payment = () => {
     return (
-        <section className="payment container">
-            <Image
-                className="payment__bg"
-                src={'/src/assets/images/main/payment/1.svg'}
-                alt=""
-                format="original"
-            />
-            <div className="payment__content">
-                <h2 className="payment__title">
-                    All-in-One Payment <br/>
-                    API — built to scale
-                </h2>
-                <div className="payment__description">
-                    <p>
-                        Ship faster and capture more revenue with a single, custom-fit <br/>
-                        payments API. Glidy processes transactions securely and efficiently <br/>
-                        to lift approvals, cut declines, and deliver a seamless checkout.
-                    </p>
-                </div>
-                <Button
-                    className={'payment__button'}
-                    label="Contact us"
-                    iconName={'arrow-right'}
-                    extraAttrs={{'modal-button-open': ''}}
+        <section className="container">
+            <div className='payment'>
+                <Image
+                    className="payment__bg"
+                    src={'/src/assets/images/main/payment/1.svg'}
+                    alt=""
+                    format="original"
                 />
-            </div>
-            {
-                cards.map(({title, description, imgSrc}, index) => (
-                    <div className="payment-card" key={index}>
-                        <div className="payment-card__inner">
-                            <Image
-                                className="payment-card__image"
-                                src={imgSrc}
-                                alt={""}
-                                format="original"
-                            />
-                        </div>
-                        <h3 className="payment-card__title">
-                            { title }
-                        </h3>
-                        <div className="payment-card__description">
-                            <p>
-                                {description}
-                            </p>
-                        </div>
+                <div className="payment__content">
+                    <h2 className="payment__title">
+                        All-in-One Payment <br/>
+                        API — built to scale
+                    </h2>
+                    <div className="payment__description">
+                        <p>
+                            Ship faster and capture more revenue with a single, custom-fit <br/>
+                            payments API. Glidy processes transactions securely and efficiently <br/>
+                            to lift approvals, cut declines, and deliver a seamless checkout.
+                        </p>
                     </div>
-                ))
-            }
+                    <Button
+                        className={'payment__button'}
+                        label="Contact us"
+                        iconName={
+                            <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8H20M20 8L12.8222 15M20 8L12.8222 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        }
+                        extraAttrs={{'modal-button-open': ''}}
+                    />
+                </div>
+                {
+                    cards.map(({title, description, imgSrc}, index) => (
+                        <div className="payment-card" key={index}>
+                            <div className="payment-card__inner">
+                                <Image
+                                    className="payment-card__image"
+                                    src={imgSrc}
+                                    alt={""}
+                                    format="original"
+                                />
+                            </div>
+                            <h3 className="payment-card__title">
+                                { title }
+                            </h3>
+                            <div className="payment-card__description">
+                                <p>
+                                    {description}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
         </section>
     )
 }

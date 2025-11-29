@@ -31,7 +31,8 @@
     $container-desktop-width,
     $container-laptop-width
   )};
-  --container-padding-x: 10px;
+
+  --container-padding-x: #{fluid(110, 10)};
 
   --section-padding-y: #{fluid(70, 40)};
 
