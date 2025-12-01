@@ -11,8 +11,7 @@ const Footer = () => {
                       <p>
                           Glidy Services FZCO <br/>
                           Register No. ____ <br/>
-                          Address Office No. 399, Obaid Musabbeh Mohammed Al <br/>
-                          Mansoori - Hor Al Anz
+                          Address Office ____
                       </p>
                   </div>
                   <div className="footer__contacts">
