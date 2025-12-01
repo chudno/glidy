@@ -1,5 +1,5 @@
 .hero {
-  min-height: 1215px;
+  min-height: fluid(1215, 1075);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,6 @@
 
   @include tablet {
     padding-top: 154px;
-    min-height: 1215px;
     overflow: hidden;
   }
 
@@ -79,7 +78,7 @@
     @include tablet {
       transform: translateY(0%);
       top: auto;
-      bottom: 130px;
+      bottom:  fluid(130, 0);
       right: auto;
     }
   }

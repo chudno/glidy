@@ -44,7 +44,7 @@
 
       /* учёт вырезов и нижней плашки */
       padding-top: calc(30px + env(safe-area-inset-top));
-      padding-bottom: calc(50px + env(safe-area-inset-bottom));
+      padding-bottom: calc(150px + env(safe-area-inset-bottom));
 
       height: calc(100vh + env(safe-area-inset-bottom));
       border-radius: 0;

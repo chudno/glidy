@@ -26,21 +26,28 @@
   flex-direction: column;
   justify-content: center;
 
+  @include laptop {
+    padding: 25px 25px 0;
+    align-items: center;
+  }
+
   @include mobile {
-    padding: 70px 10px 0;
+    padding: fluid(25, 10) 10px 0;
     align-items: center;
     text-align: center;
-
   }
 
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: fluid-to-laptop(1100, 570);
-    gap: 40px;
+    gap: fluid(40, 20);
 
     @include laptop {
-      gap: 20px;
+      max-width: 100%;
+    }
+
+    @include tablet {
       grid-template-columns: 1fr;
     }
   }
@@ -56,7 +63,7 @@
     bottom: 0;
     height: fluid(581, 347);
 
-    @include mobile {
+    @include laptop {
       margin-top: 10px;
       position: static;
       max-width: max-content;
@@ -69,6 +76,10 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
     line-height: 1.2;
     text-align: start;
+
+    @include tablet {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
 
     @include mobile {
       padding: 20px;

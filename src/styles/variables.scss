@@ -28,7 +28,7 @@
   --font-family-inter: 'Inter', sans-serif;
 
   --container-width: #{fluid-to-laptop(
-    $container-desktop-width,
+    1740,
     $container-laptop-width
   )};
 
