@@ -172,8 +172,8 @@ const MerchantTerms = (props) => {
               </p>
 
               <p className="merchant-terms__list-item-text">
-                <span className="merchant-terms__text-bold">“SYSTEM”, “we”, “our”, or “us”</span>
-                means Glidy Services FZCO, Register No. ____.
+                <span className="merchant-terms__text-bold">"SYSTEM", "we", "our", or "us"</span>
+                means Glide Payment - FZCO, Register No. 70967.
               </p>
 
               <p className="merchant-terms__list-item-text">

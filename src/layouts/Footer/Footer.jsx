@@ -9,9 +9,8 @@ const Footer = () => {
                   <div className="footer__info">
                       <Logo mode={'black'} className={"hidden-mobile"}/>
                       <p>
-                          Glidy Services FZCO <br/>
-                          Register No. ____ <br/>
-                          Address Office ____
+                          Glide Payment - FZCO, 70967 <br/>
+                          Silicon Oasis, Dubai, United Arab Emirates
                       </p>
                   </div>
                   <div className="footer__contacts">
