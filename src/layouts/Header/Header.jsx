@@ -2,7 +2,7 @@ import './Header.scss'
 import Logo from "@/components/Logo";
 import classNames from "classnames";
 import BurgerButton from "@/components/BurgerButton";
-import spriteUrl from '@/assets/icons/sprite.svg';
+import Button from "@/components/Button/index.js";
 
 const Header = (props) => {
     const {
@@ -12,24 +12,12 @@ const Header = (props) => {
 
     const menuItems = [
         {
-            label: 'About',
-            href: '/',
-            iconName: 'about'
+            label: 'Решения для платформ',
+            href: '/about'
         },
         {
-            label: 'Games & Services',
-            href: '/gaming_services',
-            iconName: 'games'
-        },
-        {
-            label: 'Payment Solutions',
-            href: '/payment_solutions',
-            iconName: 'payment'
-        },
-        {
-            label: 'Analytics',
-            href: '/analytics',
-            iconName: 'analytics'
+            label: 'Риск менеджмент',
+            href: '/risk'
         }
     ]
 
@@ -51,10 +39,8 @@ const Header = (props) => {
                 >
                     <nav className="header__menu">
                         <ul className="header__menu-list">
-                            <li className="header__menu-item">
+                            <li className="header__menu-item visible-tablet">
                                 <Logo
-                                    className='visible-tablet'
-                                    mode={'black'}
                                     loading={'eager'}
                                 />
                             </li>
@@ -66,9 +52,6 @@ const Header = (props) => {
                                         })}
                                         href={href}
                                     >
-                                        <svg width={24} height={24}>
-                                            <use href={`${spriteUrl}#${iconName}`}></use>
-                                        </svg>
                                         <span>
                                             {label}
                                         </span>
@@ -77,6 +60,11 @@ const Header = (props) => {
                             ))}
                         </ul>
                     </nav>
+                    <Button
+                        className="header__button"
+                        label={"Написать"}
+                        extraAttrs={{'modal-button-open': ''}}
+                    />
                 </dialog>
                 <BurgerButton
                     className='header__burger-button visible-tablet'

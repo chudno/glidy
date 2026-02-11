@@ -1,0 +1,39 @@
+.value-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  &__icon-wrapper {
+    @include square(50px);
+
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f8fd;
+    border-radius: 12px;
+  }
+
+  &__icon {
+    @include square(24px);
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000;
+  }
+
+  &__description {
+    font-weight: 500;
+    line-height: 130%;
+    color: #737883;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}

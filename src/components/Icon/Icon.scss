@@ -1,7 +1,5 @@
 .icon {
-  --iconSize: 24px;
+  --iconSize: 44px;
 
   @include square(var(--iconSize));
-  stroke-width: 2px;
-  display: inline-flex;
 }

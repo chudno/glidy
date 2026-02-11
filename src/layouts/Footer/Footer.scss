@@ -1,85 +1,76 @@
 .footer {
-  margin-top: fluid(90, 20);
-  padding-block: fluid(60, 40);
-  display: flex;
-  flex-direction: column;
-  row-gap: 46px;
-
-  &__wrapper {
-    background-image: url("/src/assets/images/main/footer/1.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-
-    @include tablet {
-      background-size: contain;
-      background-position: top center;
-    }
-  }
+  padding-block: 30px;
+  background-color: #F5F8FD;
+  margin-top: var(--section-padding-y);
 
   &__inner {
+    display: flex;
     justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    column-gap: fluid(240, 120);
 
-    @include tablet {
-      flex-direction: column-reverse;
-    }
-  }
-
-  &__info, &__copyright, &__email-label {
-      color: #9DA3AB;
-  }
-
-  &__info {
-    max-width: 600px;
-    width: 100%;
-    line-height: 120%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-
-    @include tablet {
-      border-top: 1px solid #d9d9d9;
-      padding-top: 30px;
-      margin-top: 30px;
-      max-width: 100%;
+    @include mobile {
+      flex-direction: column;
+      padding-inline: 10px;
     }
   }
 
   &__contacts {
-    margin-top: 20px;
-    max-width: 900px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    @include mobile {
+      row-gap: 50px;
+    }
   }
 
   &__email {
-    font-size: 36px;
-    font-weight: 600;
-    margin-top: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #0e2138;
   }
 
-  &__contacts-logo {
-    margin-bottom: 40px;
+  &__wrapper {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    @include mobile-above {
-      display: none;
+    @include mobile {
+      gap: 30px;
     }
   }
 
   &__list {
+    margin-top: 8px;
+    color: #0e2138;
     display: flex;
-    column-gap: 30px;
-    color: var(--color-black-4b);
-    margin-top: 30px;
+    gap: 30px;
 
-    @include tablet {
+    @include mobile {
+      margin-top: 50px;
       flex-direction: column;
-      row-gap: 20px;
     }
+  }
+
+  &__border {
+    height: 1px;
+    width: 100%;
+    background-color: #D9D9D9;
+  }
+
+  &__info {
+    text-align: right;
+    color: #737883;
+
+    @include mobile {
+      text-align: start;
+    }
+  }
+
+  &__copyright {
+    margin-top: 40px;
   }
 }

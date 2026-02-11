@@ -1,0 +1,81 @@
+.platform-value {
+  margin-block: var(--section-padding-y);
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__content {
+
+    &--reverse {
+      order: -1;
+    }
+
+    @include tablet {
+      display: contents;
+    }
+  }
+
+  &__title {
+    line-height: 1.08;
+
+    @include tablet {
+      order: -1;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    margin-top: fluid(12, 16);
+
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+
+  &__items {
+    margin-top: fluid(30, 32);
+    display: grid;
+    row-gap: 30px;
+
+    @include tablet {
+      margin-top: 0;
+      row-gap: 20px;
+    }
+
+    &--bigMarginTop {
+      margin-top: 40px;
+
+      @include tablet {
+        margin-top: 0;
+      }
+    }
+
+    &--withButton {
+      row-gap: 16px;
+    }
+  }
+
+  &__button {
+    margin-top: 32px;
+    width: 240px;
+
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

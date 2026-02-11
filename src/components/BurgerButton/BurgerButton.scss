@@ -3,12 +3,12 @@
   @include square(51px);
 
   padding: 0;
-  background-color: var(--color-black-10);
+  background: white;
   border: var(--border-width-m) solid var(--color-black-15);
   border-radius: var(--border-radius-xs);
 
   @include hover {
-    background-color: var(--color-red-60);
+    background-color: var(--color-primary-gradient);
     border-color: transparent;
   }
 
@@ -16,7 +16,7 @@
     .burger-button__line {
       stroke-dasharray: 90 207;
       stroke-dashoffset: -134;
-      stroke: var(--color-black);
+      stroke: var(--color-primary);
 
       &__line--2 {
         stroke-dasharray: 1 60;
@@ -34,7 +34,7 @@
 
   &__line {
     fill: none;
-    stroke: var(--color-white);
+    stroke: var(--color-primary);
     stroke-width: 6;
     stroke-linecap: round;
     stroke-dasharray: 60 207;

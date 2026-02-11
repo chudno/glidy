@@ -1,5 +1,4 @@
 import './Button.scss'
-import Icon from '@/components/Icon'
 import classNames from "classnames"
 
 const Button = (props) => {
@@ -9,7 +8,7 @@ const Button = (props) => {
         type = 'button',
         target,
         /**
-         * '' (default) | 'transparent' | 'black-10' | 'black-08' | 'black-06'
+         * '' (default) | 'white'
          **/
         mode = '',
         label,

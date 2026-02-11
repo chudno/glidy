@@ -1,0 +1,43 @@
+.process-step {
+  background-color: #F6F9FF;
+  border-radius: 14px;
+  position:  relative;
+  
+  &__number {
+    @include square(50px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 116%;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+
+    @include mobile {
+      max-height: 277px;
+      object-position: top;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    display: grid;
+    row-gap: 8px;
+
+    @include mobile {
+      padding: 20px 10px 20px;
+    }
+  }
+}

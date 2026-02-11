@@ -1,5 +1,4 @@
 import classNames from "classnames"
-import {Icon as MinistaIcon, Image} from 'minista'
 import './Icon.scss'
 
 const Icon = (props) => {

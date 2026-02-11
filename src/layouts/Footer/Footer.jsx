@@ -4,47 +4,44 @@ import './Footer.scss'
 const Footer = () => {
   return (
       <footer  className="footer ">
-          <div className="footer__wrapper container">
+          <div className="container">
               <div className="footer__inner">
-                  <div className="footer__info">
-                      <Logo mode={'black'} className={"hidden-mobile"}/>
-                      <p>
-                          Glide Payment - FZCO, 70967 <br/>
-                          Silicon Oasis, Dubai, United Arab Emirates
+                  <div className="footer__contacts">
+                      <Logo />
+                      <p className="footer__email">
+                          support@apiport.pro
                       </p>
                   </div>
-                  <div className="footer__contacts">
-                      <Logo
-                          mode={'black'}
-                          className={"footer__contacts-logo"}
-                      />
-                      <p className="footer__email-label">
-                          Email:
-                      </p>
-                      <a
-                         href="mailto:support@glidy.pro"
-                         className="footer__email"
-                      >
-                          support@glidy.pro
-                      </a>
+                  <div className="footer__wrapper">
                       <ul className="footer__list">
                           <li className="footer__item">
-                              <a className="footer__items-link" href="/terms">
-                                  Merchant Terms & Conditions
+                              <a className="footer__items-link" href="/about">
+                                  Решения для платформ
                               </a>
                           </li>
                           <li className="footer__item">
-                              <a className="footer__items-link" href="/policy">
-                                  Cookie Policy
+                              <a className="footer__items-link" href="/risk">
+                                  Риск менеджмент
                               </a>
                           </li>
+                          <li className="footer__item">
+                              <a className="footer__items-link" href="/misc">
+                                  Договор оферта
+                              </a>
+                          </li>
+
                       </ul>
+                      <div className="footer__border visible-mobile">
+                      </div>
+                      <p className="footer__info">
+                          © ООО "Технологии Интеграции" ИНН 9726046121
+                      </p>
                   </div>
-              </div>
-              <div className="footer__copyright">
-                  <p>
-                      All rights reserved © 2025
-                  </p>
+                  <div className="footer__copyright visible-mobile">
+                      <p>
+                          All rights reserved © 2026
+                      </p>
+                  </div>
               </div>
           </div>
       </footer>

@@ -1,18 +1,26 @@
 .button {
   @include flex-center(true);
-  @include fluid-text(20, 16);
 
-  font-family: var(--font-family-inter);
-  column-gap: 10px;
-  padding: 10px 30px;
-  height: 56px;
-  font-weight: 500;
-  color: var(--color-black-07);
-  background-color: var(--color-green-d4);
   border: none;
-  border-radius: 100px;
-  user-select: none;
-  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #fff;
+  border-radius: 7px;
+  padding: 0 16px;
+  height: 44px;
+  background: var(--color-primary-gradient);
+
+  &__white {
+    background: #fff;
+
+    .button__label {
+      background: linear-gradient(180deg, #3d4bcd 0%, #1c2dc3 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 
   @include hover {
     opacity: 0.9;
@@ -26,41 +34,5 @@
     color: var(--color-white);
     background-color: var(--color-gray-4b);
     pointer-events: none;
-  }
-
-  &:has(.button__icon:only-child) {
-    @include square(fluid-to-laptop(56, 44));
-
-    padding: 0;
-  }
-
-  &__transparent {
-    background-color: transparent;
-
-    &:has(.button__icon:only-child) {
-      @include square(44px);
-
-      .button__icon {
-        --iconSize: #{fluid-to-laptop(34, 24)};
-      }
-    }
-  }
-
-  &__black-06,
-  &__black-08,
-  &__black-10 {
-    border: var(--border);
-  }
-
-  &__black-06 {
-    background: var(--color-black-06);
-  }
-
-  &__black-08 {
-    background-color: var(--color-black-08);
-  }
-
-  &__black-10 {
-    background-color: var(--color-black-10);
   }
 }

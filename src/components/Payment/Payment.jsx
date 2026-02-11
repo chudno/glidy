@@ -1,88 +1,68 @@
-import './Payment.scss'
+import "./Payment.scss";
 import Button from "@/components/Button/index.js";
 import {Image} from "minista";
 
-const cards = [
+const paymentItems = [
     {
-        title: "Faster, More Reliable Processing",
-        description: "Increase speed and stability with our all-in-one platform. Higher approval rates mean quicker payments, happier customers, and fewer abandoned carts.",
-        imgSrc: "/src/assets/images/main/payment/2.svg",
+        iconScr: "/src/assets/images/main/payment/1.svg",
     },
     {
-        title: "Future-Ready Payments",
-        description: "Unify every payment method in one system that adapts to your goals and real-time changes—so you’re ready for whatever comes next.",
-        imgSrc: "/src/assets/images/main/payment/3.svg",
+        iconScr: "/src/assets/images/main/payment/2.svg",
     },
     {
-        title: "Customer Trust & Security",
-        description: "Protect the journey with advanced fraud controls that stop threats in real time—so you can focus on building strong customer relationships.",
-        imgSrc: "/src/assets/images/main/payment/4.svg",
+        iconScr: "/src/assets/images/main/payment/3.svg",
     },
     {
-        title: "Actionable Data & Insights",
-        description: "See the full payment lifecycle at a glance. Spot trends and bottlenecks, find growth opportunities, and optimize strategy with clear, exportable reports.",
-        imgSrc: "/src/assets/images/main/payment/5.svg",
-    }
+        iconScr: "/src/assets/images/main/payment/4.svg",
+    },
+    {
+        iconScr: "/src/assets/images/main/payment/5.svg",
+    },
+    {
+        iconScr: "/src/assets/images/main/payment/6.svg",
+    },
+    {
+        iconScr: "/src/assets/images/main/payment/7.svg",
+    },
 ]
 
-const Payment = () => {
+function Payment() {
     return (
-        <section className="container">
-            <div className='payment'>
-                <Image
-                    className="payment__bg"
-                    src={'/src/assets/images/main/payment/1.svg'}
-                    alt=""
-                    format="original"
-                />
-                <div className="payment__content">
-                    <h2 className="payment__title">
-                        All-in-One Payment <br/>
-                        API — built to scale
-                    </h2>
-                    <div className="payment__description">
-                        <p>
-                            Ship faster and capture more revenue with a single, custom-fit <br/>
-                            payments API. Glidy processes transactions securely and efficiently <br/>
-                            to lift approvals, cut declines, and deliver a seamless checkout.
-                        </p>
-                    </div>
-                    <Button
-                        className={'payment__button'}
-                        label="Contact us"
-                        iconName={
-                            <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 8H20M20 8L12.8222 15M20 8L12.8222 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        }
-                        extraAttrs={{'modal-button-open': ''}}
+        <section className="payment">
+            <div className="container">
+                <div className="payment__wrapper">
+                    <Image
+                        className="payment__image"
+                        src={"/src/assets/images/main/payment/1.png"}
+                        alt=""
+                        format="webp"
                     />
-                </div>
-                {
-                    cards.map(({title, description, imgSrc}, index) => (
-                        <div className="payment-card" key={index}>
-                            <div className="payment-card__inner">
-                                <Image
-                                    className="payment-card__image"
-                                    src={imgSrc}
-                                    alt={""}
-                                    format="original"
-                                />
-                            </div>
-                            <h3 className="payment-card__title">
-                                { title }
-                            </h3>
-                            <div className="payment-card__description">
-                                <p>
-                                    {description}
-                                </p>
-                            </div>
+                    <div className="payment__body">
+                        <h2 className="payment__title">
+                            Локальные способы оплаты
+                            для глобальных клиентов
+                        </h2>
+                        <div className="payment__description">
+                            <p>
+                                Поддерживайте привычные методы оплаты в разных регионах без сложной интеграции.
+                            </p>
                         </div>
-                    ))
-                }
+                        <div className="payment__footer">
+                            {
+                                paymentItems.map((item, index) => {
+                                    return (
+                                        <div className="payment-card">
+                                            <img className="payment-card__icon" src={item.iconScr} alt=""/>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Payment
+export default Payment;

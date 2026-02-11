@@ -1,0 +1,27 @@
+.IntegrationStep {
+  background-color: #F6F9FF;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 240px;
+
+  @include mobile {
+    min-height: 200px;
+  }
+
+
+  &__icon {
+    margin-bottom: 30px;
+  }
+
+
+  &__title {
+    margin-top: auto;
+  }
+
+  &__description {
+    margin-top: 8px;
+  }
+}

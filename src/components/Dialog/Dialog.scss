@@ -8,25 +8,46 @@
   background: transparent;
   padding: 0;
   height: calc(100vh + env(safe-area-inset-bottom));
+  transition-behavior: allow-discrete;
+  transition-duration: var(--transition-duration);
+
 
   @include mobile {
     margin: 0;
+    top: 30px;
   }
+
+  @mixin starting-styles {
+    translate: 0 50%;
+    opacity: 0;
+  }
+
 
   &[open] {
     display: flex;
     align-items: center;
+
+    @include mobile {
+      @starting-style {
+        @include starting-styles;
+      }
+    }
+
   }
 
   &__backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%), linear-gradient(180deg, rgba(61, 75, 205, 0.6) 0%, rgba(28, 45, 195, 0.6) 100%), rgba(0, 0, 0, 0.4);
+
+    @include mobile {
+      background: transparent;
+    }
   }
 
   &__inner {
     overflow: auto;
-    background: var(--color-white);
     border-radius: var(--border-radius-l);
     background: var(--color-white);
     position: relative;
@@ -40,14 +61,15 @@
 
     @include mobile {
       max-width: 100%;
+      border-radius: 20px 20px 0 0;
       overflow-y: auto;
+      justify-content: center;
 
       /* учёт вырезов и нижней плашки */
       padding-top: calc(30px + env(safe-area-inset-top));
       padding-bottom: calc(150px + env(safe-area-inset-bottom));
 
       height: calc(100vh + env(safe-area-inset-bottom));
-      border-radius: 0;
     }
   }
 
@@ -65,13 +87,13 @@
     @include square(44px);
 
     @include mobile {
-      left: 0;
       top: 5px;
     }
   }
 
   &__form-wrapper {
     display: block;
+
     &.is-hidden {
       display: none;
     }
@@ -81,7 +103,7 @@
     color: var(--color-black-07);
     font-weight: 600;
     line-height: 1.2;
-    font-size: fluid(36, 28);
+    font-size: 45px;
     text-align: center;
     margin-bottom: 30px;
   }
@@ -96,8 +118,8 @@
 
   &__main {
     &-body {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
       gap: 20px;
       margin-bottom: 20px;
 
@@ -129,30 +151,44 @@
 
   &__input {
     border-radius: var(--border-radius-xs);
-    border: 1px solid var(--color-gray-4b);
+    border: 1px solid transparent;
     height: 46px;
     width: 100%;
     padding: 12.5px 10px;
+    background-color: #F6F9FF;
 
     &::placeholder {
       color: var(--color-gray-4b);
       line-height: 1.3;
       font-size: 16px;
     }
+
+    &:focus {
+      border-color: var(--color-primary);
+      transition-duration: var(--transitio-duration);
+      background-color: transparent;
+    }
   }
 
   &__textarea {
     resize: none;
     border-radius: var(--border-radius-xs);
-    border: 1px solid var(--color-gray-4b);
+    border: 1px solid transparent;
     padding: 10px;
     min-height: 92px;
     width: 100%;
+    background-color: #F6F9FF;
 
     &::placeholder {
       color: var(--color-gray-4b);
       line-height: 1.3;
       font-size: 16px;
+    }
+
+    &:focus {
+      background-color: transparent;
+      border-color: var(--color-primary);
+      transition-duration: var(--transitio-duration);
     }
   }
 
