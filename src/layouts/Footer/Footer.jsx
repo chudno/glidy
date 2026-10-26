@@ -43,7 +43,7 @@ const Footer = () => {
                   </div>
                   <div className="footer__copyright visible-mobile">
                       <p>
-                          All rights reserved © 2026
+                          All rights reserved © <span data-current-year="">{new Date().getFullYear()}</span>
                       </p>
                   </div>
               </div>

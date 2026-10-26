@@ -1,6 +1,12 @@
 import OverlayMenu from "@/modules/OverlayMenu.js";
 import Modal from "@/modules/Modal.js";
 
+// Refresh the prerendered year without requiring a new build.
+const currentYear = String(new Date().getFullYear());
+document.querySelectorAll("[data-current-year]").forEach(element => {
+    element.textContent = currentYear;
+});
+
 new OverlayMenu();
 
 const modal = new Modal(".dialog");
