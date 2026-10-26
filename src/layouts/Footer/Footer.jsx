@@ -29,7 +29,11 @@ const Footer = () => {
                                   Договор оферта
                               </a>
                           </li>
-
+                          <li className="footer__item">
+                              <a className="footer__items-link" href="/terms-of-use">
+                                  Merchant Terms & Conditions
+                              </a>
+                          </li>
                       </ul>
                       <div className="footer__border visible-mobile">
                       </div>
