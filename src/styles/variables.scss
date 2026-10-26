@@ -2,7 +2,8 @@
   --color-white: #FFFFFF;
   --color-black: #000000;
 
-  --color-green-d4: #D4F770;
+  --color-primary:  #1c2dc3;
+  --color-primary-gradient: linear-gradient(90deg, #3d4bcd 0%, #1c2dc3 100%);
 
   --color-black-07: #071220;
   --color-black-4b: #4B5563;
@@ -27,14 +28,11 @@
   --font-family-base: 'Proxima Nova', sans-serif;
   --font-family-inter: 'Inter', sans-serif;
 
-  --container-width: #{fluid-to-laptop(
-    1740,
-    $container-laptop-width
-  )};
+  --container-width: 1180px;
 
-  --container-padding-x: #{fluid(110, 10)};
+  --container-padding-x: 10px;
 
-  --section-padding-y: #{fluid(70, 40)};
+  --section-padding-y: #{fluid(50, 30)};
 
   --transition-duration: 0.2s;
   --transition-duration-longer: 0.4s;

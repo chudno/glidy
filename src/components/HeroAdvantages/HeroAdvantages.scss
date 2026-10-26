@@ -1,0 +1,28 @@
+.hero__footer {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mobile {
+    justify-content: center;
+  }
+}
+
+.hero__advantage {
+  color: #000;
+}
+
+.hero__advantage.is-active {
+  background: linear-gradient(180deg, #3d4bcd 0%, #1c2dc3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__advantage:not(:last-child)::after {
+  content: '·';
+  margin: 0 8px;
+  color: #000;
+}

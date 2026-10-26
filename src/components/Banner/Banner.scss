@@ -1,0 +1,66 @@
+.banner {
+  margin-block: var(--section-padding-y);
+
+  color: #fff;
+  background-image: url('/src/assets/images/main/8.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  aspect-ratio: 1180 / 394;
+  display: grid;
+  align-items: center;
+  padding-inline: 10px;
+
+
+  @include mobile {
+    background-image: url('/src/assets/images/main/8_mobile.webp');
+    width: 100%;
+    aspect-ratio: 370 / 500;
+  }
+
+
+  &__wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+      padding: 130px 0;
+      background: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__title {
+    max-width: 580px;
+    line-height: 116%;
+    text-align: center;
+    color: #fff;
+    font-size: fluid(40, 30);
+  }
+
+  &__description {
+    max-width: 580px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__button {
+    margin-top: fluid(40, 32);
+  }
+
+}
+

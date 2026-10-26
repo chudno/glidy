@@ -1,51 +1,5 @@
-<svg width="1510" height="622" viewBox="0 0 1510 622" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_2_1592" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-17" width="1510" height="639">
-<path d="M0 -17H1510V622H0V-17Z" fill="url(#paint0_radial_2_1592)"/>
-</mask>
-<g mask="url(#mask0_2_1592)">
-<g opacity="0.3">
-<rect x="-13.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="156.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="326.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="496.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="666.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="836.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="1006.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="1176.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="1346.5" y="-71.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="-13.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="156.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="326.5" y="98.5" width="171" height="171" fill="#D9D9D9" fill-opacity="0.1" stroke="#D9D9D9"/>
-<rect x="496.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="666.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="836.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="1006.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="1176.5" y="98.5" width="171" height="171" stroke="#D9D9D9"/>
-<path d="M1517.5 98.5V269.5H1346.5V98.5H1517.5Z" fill="#D9D9D9" fill-opacity="0.15" stroke="#D9D9D9"/>
-<rect x="-13.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="156.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="326.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="496.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="666.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="836.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
-<path d="M1177.5 268.5V439.5H1006.5V268.5H1177.5Z" fill="#D9D9D9" fill-opacity="0.15" stroke="#D9D9D9"/>
-<rect x="1176.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="1346.5" y="268.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="-13.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="156.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="326.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="496.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
-<path d="M837.5 438.5V609.5H666.5V438.5H837.5Z" fill="#D9D9D9" fill-opacity="0.15" stroke="#D9D9D9"/>
-<rect x="836.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="1006.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="1176.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
-<rect x="1346.5" y="438.5" width="171" height="171" stroke="#D9D9D9"/>
-</g>
-</g>
-<defs>
-<radialGradient id="paint0_radial_2_1592" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(755 302.5) rotate(90) scale(319.5 755)">
-<stop offset="0.285216" stop-color="#D9D9D9"/>
-<stop offset="1" stop-color="#737373" stop-opacity="0.1"/>
-</radialGradient>
-</defs>
+<svg width="32" height="19" viewBox="0 0 32 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.44155 18.7658C14.656 18.7658 18.8831 14.5649 18.8831 9.38289C18.8831 4.20086 14.656 0 9.44155 0C4.22713 0 0 4.20086 0 9.38289C0 14.5649 4.22713 18.7658 9.44155 18.7658Z" fill="#E7001B" />
+    <path d="M22.0351 18.7658C27.2495 18.7658 31.4767 14.5649 31.4767 9.38289C31.4767 4.20086 27.2495 0 22.0351 0C16.8207 0 12.5936 4.20086 12.5936 9.38289C12.5936 14.5649 16.8207 18.7658 22.0351 18.7658Z" fill="#F59D1A" />
+    <path d="M15.7409 2.38965C17.6724 4.10772 18.8882 6.60411 18.8882 9.38299C18.8882 12.1619 17.6724 14.6583 15.7409 16.3763C13.8093 14.6583 12.5936 12.1619 12.5936 9.38299C12.5936 6.60411 13.8093 4.10772 15.7409 2.38965Z" fill="#FC5F01" />
 </svg>

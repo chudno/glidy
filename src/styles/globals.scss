@@ -11,12 +11,12 @@ html {
 }
 
 body {
-  @include fluid-text(24, 18);
-
+  font-size: 18px;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base);
-  color: var(--color-black-4b);
+  color: #737883;
   background-color: var(--color-white);
   line-height: 1.3;
 }
@@ -31,27 +31,23 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  color: var(--color-black-07);
+  color: #0e2138;
 }
 
 h1, .h1 {
-  @include fluid-text(100, 48);
+  font-size: 45px;
 
-  color: var(--color-white);
   font-weight: 400;
   line-height: 0.9;
 }
 
 h2, .h2 {
-  @include fluid-text(70, 44);
-
-  font-weight: 400;
-  line-height: 1.1;
+  font-size: 40px;
+  line-height: 1.16;
 }
 
 h3, .h3 {
-  @include fluid-text(36, 28);
-
+  font-size: 18px;
   font-weight: 600;
 }
 

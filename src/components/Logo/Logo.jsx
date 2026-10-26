@@ -20,8 +20,8 @@ const Logo = (props) => {
                 className="logo__image"
                 src={ mode === "white" ? "/logo.svg" : "/logoV2.svg" }
                 alt=""
-                width={"113"}
-                height={"33"}
+                width={"159"}
+                height={"39"}
                 loading={loading}
             />
         </a>

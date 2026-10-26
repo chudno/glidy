@@ -36,20 +36,3 @@
     display: none !important;
   }
 }
-
-.main-wrapper {
-  background-image: image-set(
-                  url("@/assets/images/bg-main.webp") 1x,
-                  url("@/assets/images/bg-main-2x.webp") 2x
-  );
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  @include mobile {
-    background-image: image-set(
-                    url("@/assets/images/bg-main-mobile.webp") 1x,
-                    url("@/assets/images/bg-main-mobile-2x.webp") 2x
-    );
-  }
-}

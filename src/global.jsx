@@ -10,13 +10,13 @@ export default function (props) {
     url,
     children,
     title,
-    description = 'Glidy delivers trusted international payment solutions for businesses and individuals, ensuring fast and secure transactions, along with specialized services for gaming, digital vouchers, and a wide range of digital products.'
+    description = 'Company delivers trusted international payment solutions for businesses and individuals, ensuring fast and secure transactions, along with specialized services for gaming, digital vouchers, and a wide range of digital products.'
   } = props
 
   return (
     <>
         <Head htmlAttributes={{ lang: 'en' }}>
-            <title>Glidy : {title}</title>
+            <title>Company : {title}</title>
             <meta name="description" content={description} />
 
             <script
