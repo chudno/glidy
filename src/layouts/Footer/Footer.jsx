@@ -29,7 +29,7 @@ const Footer = () => {
                       </a>
                       <ul className="footer__list">
                           <li className="footer__item">
-                              <a className="footer__items-link" href="/terms">
+                              <a className="footer__items-link" href="/terms-of-use">
                                   Merchant Terms & Conditions
                               </a>
                           </li>
