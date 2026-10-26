@@ -29,7 +29,7 @@ const Footer = () => {
                       </a>
                       <ul className="footer__list">
                           <li className="footer__item">
-                              <a className="footer__items-link" href="/terms">
+                              <a className="footer__items-link" href="/terms-of-use">
                                   Merchant Terms & Conditions
                               </a>
                           </li>
@@ -43,7 +43,7 @@ const Footer = () => {
               </div>
               <div className="footer__copyright">
                   <p>
-                      All rights reserved © 2025
+                      All rights reserved © <span data-current-year="">{new Date().getFullYear()}</span>
                   </p>
               </div>
           </div>
